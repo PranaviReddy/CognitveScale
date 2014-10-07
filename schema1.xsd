@@ -1,0 +1,70 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+<xs:element name="studentinfo" type="studentinfotype"/>
+<xs:complexType name="studentinfotype">
+<xs:sequence>
+	<xs:element ref="student" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:element name="student" type="studenttype"/>
+<xs:complexType name="studenttype">
+<xs:sequence>
+	<xs:element ref="year_of_join"/>
+	<xs:element ref="id"/>
+	<xs:element ref="name"/>
+	<xs:element ref="dob"/>
+	<xs:element ref="branch" minOccurs="1" maxOccurs="2"/>
+	<xs:element ref="contact"/>
+	<xs:element ref="address"/>
+	<xs:element ref="cgpa"/>
+	<xs:element ref="courses" minOccurs="1" maxOccurs="8"/>
+</xs:sequence>
+</xs:complexType>
+	
+<xs:element name="year_of_join" type="xs:int"/>
+
+<xs:element name="id" type="xs:string"/>
+
+<xs:element name="name" type="nametype"/>
+<xs:complexType name="nametype">
+<xs:sequence>
+	<xs:element ref="first"/>
+	<xs:element ref="last"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:element name="first" type="xs:string"/>
+<xs:element name="last" type="xs:string"/>
+
+<xs:element name="dob" type="xs:date"/>
+
+<xs:element name="branch" type="xs:string"/>
+
+<xs:element name="contact" type="contacttype"/>
+<xs:complexType name="contacttype">
+<xs:sequence>
+	<xs:element ref="phoneno"/>
+	<xs:element ref="mailid"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:element name="phoneno" type="xs:long"/>
+<xs:element name="mailid" type="xs:string"/>
+
+<xs:element name="address" type="addresstype"/>
+<xs:complexType name="addresstype">
+<xs:sequence>
+         <xs:element ref="hostel"/>
+         <xs:element ref="permanent"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="hostel" type="xs:string"/>
+<xs:element name="permanent" type="xs:string"/>
+
+<xs:element name="cgpa" type="xs:float"/>
+
+<xs:element name="courses" type="xs:string"/>
+
+</xs:schema>
+

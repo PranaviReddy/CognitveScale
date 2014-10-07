@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<studentinfo>
+	<student>
+		<year_of_join>2011</year_of_join>
+		<id>2011A7PS057H</id>
+		<name>
+			<first>Pranavi</first>
+			<last>Dadireddy</last>
+		</name>
+		<dob>1994-03-26</dob>
+		<branch>Computer Science</branch>
+		<branch>MSc Physics</branch>
+		<contact>
+			<phoneno>9010031360</phoneno>
+			<mailid>pranavireddy.2603@gmail.com</mailid>
+		</contact>
+		<address>
+			<hostel>M-280,Meera bhawan</hostel>
+			<permanent>3-7-62/382A,SouthEnd Park,LB Nagar,Hyderabad,Telangana</permanent>
+		</address>	
+		<cgpa>8.65</cgpa>
+		<courses>TOC</courses>
+		<courses>CG</courses>
+	</student>
+</studentinfo>
